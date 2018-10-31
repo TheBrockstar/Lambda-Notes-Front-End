@@ -9,7 +9,7 @@ export class Sidebar extends Component {
     }
 
     deleteAll = () => {
-        for(let i = 0; i <= 500; i++){this.props.expungeNote(this.props.notes[i]._id)}
+        // for(let i = 0; i <= 500; i++){this.props.expungeNote(this.props.notes[i]._id)}
     }
 
     myLoop = () => {  

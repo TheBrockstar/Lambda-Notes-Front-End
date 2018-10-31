@@ -100,7 +100,7 @@ class App extends Component {
             />
           )}/>
 
-          <Route path="/notes" render= { props => (
+          <Route unique path="/" render= { props => (
             <YourNotes 
             {...props} 
             notes={this.props.notes} 
@@ -110,7 +110,7 @@ class App extends Component {
             />
           )}/>
 
-          <Route path="/notes/note/:id" render= {
+          <Route path="/note/:id" render= {
           props => (
             <ViewNote 
             {...props} 

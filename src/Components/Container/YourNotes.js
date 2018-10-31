@@ -37,7 +37,7 @@ export class YourNotes extends Component {
                     note => (note.title + " " + note.textBody + " " + note.tags).toLowerCase().includes(`${this.props.currentSearch.sidebarSearch}`.toLowerCase())).map(
                         (note, id) => (
                             <div id={GridLayout.state} className="note" key={note._id.toString()} 
-                            onDoubleClick={() => this.props.history.push(`notes/note/${note._id}`)}
+                            onDoubleClick={() => this.props.history.push(`note/${note._id}`)}
                             >
                                 <Note 
                                 {...this.props} 
